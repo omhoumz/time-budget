@@ -2,6 +2,7 @@ import React from 'react'
 import cx from 'classnames'
 import { Link } from 'gatsby'
 
+import SEO from '../../components/seo/seo'
 import styles from './app-page.module.css'
 import { copyElement } from '../../components/footer/footer'
 import Notes from '../../components/ui/notes/notes'
@@ -33,6 +34,7 @@ const messages = [{ message: '1' }, { message: '2' }, { message: '3' }]
 const AppPage = () => {
   return (
     <main className={cx('main', styles.main)}>
+      <SEO title='App' />
       <div className={styles.side}>
         <div className={styles.nav}>
           <Link className={styles.logo}>

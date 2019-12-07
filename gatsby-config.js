@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `TimeBudget`,
+    title: `timeBudget`,
     description: `Time Budgeting is here`,
     author: `@omarhoumz`,
   },
