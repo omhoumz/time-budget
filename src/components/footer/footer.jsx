@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Wrapper from '../_common/wrapper/wrapper'
+import Wrapper from '../ui/wrapper/wrapper'
 import styles from './footer.module.css'
 
 const Footer = () => {

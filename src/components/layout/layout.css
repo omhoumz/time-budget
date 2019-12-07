@@ -1,0 +1,17 @@
+:root {
+  --p-0: #e5e2fd;
+  --p-1: #20109d;
+  --p-2: #15087b;
+
+  --s-0: #fcf1cb;
+}
+
+#___gatsby > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#___gatsby > div > :nth-child(2) {
+  flex-grow: 1;
+}

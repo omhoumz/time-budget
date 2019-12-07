@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-import Wrapper from '../_common/wrapper/wrapper'
+import Wrapper from '../ui/wrapper/wrapper'
 import styles from './header.module.css'
 
 const Header = ({ siteTitle }) => (

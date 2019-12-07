@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from '../header/header'
 import Footer from '../footer/footer'
-// import styles from './layout.module.css'
+import './layout.css'
 import './g-resets.css'
 
 const Layout = ({ children }) => {
