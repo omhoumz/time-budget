@@ -1,0 +1,9 @@
+.notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.note {
+  padding: 1rem;
+  background-color: var(--s-0);
+}
