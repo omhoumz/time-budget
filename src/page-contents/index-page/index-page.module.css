@@ -1,0 +1,10 @@
+.index {
+  background-color: var(--p-0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper p {
+  margin-bottom: 0.5rem;
+}
