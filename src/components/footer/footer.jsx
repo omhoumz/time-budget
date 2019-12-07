@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Wrapper from '../ui/wrapper/wrapper'
 import styles from './footer.module.css'
 
 const copyText = `© ${new Date().getFullYear()}, Built with `
@@ -16,7 +17,11 @@ export const copyElement = (
 )
 
 const Footer = () => {
-  return <footer className={styles.footer}>{copyElement}</footer>
+  return (
+    <footer className={styles.footer}>
+      <Wrapper>{copyElement}</Wrapper>
+    </footer>
+  )
 }
 
 export default Footer
