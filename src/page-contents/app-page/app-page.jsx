@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 
 import styles from './app-page.module.css'
 import { copyElement } from '../../components/footer/footer'
-import Wrapper from '../../components/ui/wrapper/wrapper'
 import Notes from '../../components/ui/notes/notes'
 
 const navItemsContent = [

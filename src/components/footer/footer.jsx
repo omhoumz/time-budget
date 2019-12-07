@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Wrapper from '../ui/wrapper/wrapper'
 import styles from './footer.module.css'
 
 const copyText = `© ${new Date().getFullYear()}, Built with `
