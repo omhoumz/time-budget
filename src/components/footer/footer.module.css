@@ -1,3 +1,9 @@
 .footer {
-  background-color: grey;
+  padding: 0.5rem 0;
+}
+
+.copy {
+  margin: 0;
+  font-size: 12px;
+  color: var(--p-2);
 }

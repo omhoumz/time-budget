@@ -8,14 +8,8 @@ import styles from './header.module.css'
 const Header = ({ siteTitle }) => (
   <header className={styles.header}>
     <Wrapper>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to='/'
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+      <h1 className={styles.logoH1}>
+        <Link to='/' className={styles.logo}>
           {siteTitle}
         </Link>
       </h1>
