@@ -1,5 +1,5 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+import cx from 'classnames'
 import { Link } from 'gatsby'
 
 import SEO from '../../components/seo/seo'
@@ -8,7 +8,7 @@ import styles from './index-page.module.css'
 
 const IndexPage = () => {
   return (
-    <Wrapper classes={styles.wrapper}>
+    <Wrapper classes={cx('main', styles.wrapper)}>
       <SEO title='Home' />
       <h1>Hi people</h1>
       <p>This is a time budget app.</p>
@@ -19,7 +19,5 @@ const IndexPage = () => {
     </Wrapper>
   )
 }
-
-// IndexPage.propTypes = {}
 
 export default IndexPage

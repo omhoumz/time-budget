@@ -7,13 +7,11 @@ import styles from './header.module.css'
 
 const Header = ({ siteTitle }) => (
   <header className={styles.header}>
-    <Wrapper>
-      <h1 className={styles.logoH1}>
-        <Link to='/' className={styles.logo}>
-          {siteTitle}
-        </Link>
-      </h1>
-    </Wrapper>
+    <h1 className={styles.logoH1}>
+      <Link to='/' className={styles.logo}>
+        {siteTitle}
+      </Link>
+    </h1>
   </header>
 )
 
