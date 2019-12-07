@@ -4,14 +4,16 @@ import cx from 'classnames'
 
 import styles from './wrapper.module.css'
 
-const Wrapper = ({ children, classes }) => {
-  if (!children) return null
-  return <div className={cx(styles.wrapper, classes)}>{children}</div>
+const Wrapper = ({ children, comp, classes }) => {
+  const Comp = comp || 'main'
+
+  return <Comp className={cx(styles.wrapper, classes)}>{children}</Comp>
 }
 
 Wrapper.defaultProps = {
   children: null,
   classes: null,
+  comp: undefined,
 }
 
 Wrapper.propTypes = {
@@ -20,6 +22,11 @@ Wrapper.propTypes = {
     PropTypes.string,
     PropTypes.array,
     PropTypes.object,
+  ]),
+  comp: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.element,
+    PropTypes.node,
   ]),
 }
 
