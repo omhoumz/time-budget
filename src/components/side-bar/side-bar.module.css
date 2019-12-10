@@ -1,0 +1,90 @@
+.logo {
+  text-decoration: none;
+  padding-inline-start: 1rem;
+  padding-block-end: 1rem;
+
+  color: var(--g-4);
+}
+
+.side {
+  grid-area: s;
+
+  border-right: 1px solid var(--p-1);
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  padding: 1rem 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navItem {
+  text-decoration: none;
+  padding-block-start: 0.5rem;
+  padding-inline-end: 0.6rem;
+  padding-block-end: 0.5rem;
+  padding-inline-start: calc(1rem - 6px);
+
+  font-weight: 700;
+  text-transform: capitalize;
+
+  border-left: 6px solid transparent;
+
+  transition: border 190ms ease;
+}
+
+.navItem:not(:first-child) {
+  margin-top: 0.2rem;
+}
+
+.navItem:hover {
+  border-left-color: var(--p-5);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.links > p {
+  --padding: 1rem;
+  --sm-padding: 0.4rem;
+  padding-block-start: var(--sm-padding);
+  padding-block-end: var(--padding);
+  padding-inline-start: var(--padding);
+  padding-inline-end: var(--padding);
+}
+
+.linkItem {
+  text-decoration: none;
+  padding-block-start: 0.5rem;
+  padding-inline-end: 0.6rem;
+  padding-block-end: 0.5rem;
+  padding-inline-start: 1rem;
+
+  font-weight: 400;
+  text-transform: capitalize;
+  color: var(--g-4);
+
+  transition: color 190ms ease;
+}
+.linkItem:not(:first-child) {
+  margin-top: 0.2rem;
+}
+
+.linkItem:hover {
+  color: var(--p-7);
+}
+
+@media (max-width: 767px) {
+  .side {
+    display: none;
+  }
+}
