@@ -1,4 +1,5 @@
 :root {
+  /* color */
   --p-0: #f4f3f8;
   --p-1: #e5e2fd;
   --p-5: #20109d;
@@ -7,6 +8,12 @@
   --s-0: #fcf1cb;
 
   --g-4: #8a8991;
+
+  /* breakpoints */
+  --breakpoint-xs: 575px;
+  --breakpoint-sm: 767px;
+  --breakpoint-md: 991px;
+  --breakpoint-lg: 1199px;
 }
 
 #___gatsby > div {
