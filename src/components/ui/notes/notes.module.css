@@ -1,9 +1,71 @@
+.notesWrapper {
+  display: flex;
+}
+.notesWrapper + .notesWrapper {
+  margin-block-start: 2rem;
+}
+
+.notesTime {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  margin-inline-end: 12px;
+  line-height: 36px;
+}
+
+.addBtn {
+  border: 0;
+  background-color: transparent;
+  --btn-size: 36px;
+  height: var(--btn-size);
+  width: var(--btn-size);
+  cursor: pointer;
+  opacity: 0.5;
+  font-family: arial;
+  font-weight: 100;
+  font-size: 36px;
+  padding: 0;
+}
+
+.addBtn:focus {
+  outline: none;
+}
+
+.timeColumn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-inline-end: 1rem;
+}
+
 .notes {
+  flex-grow: 1;
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
 }
 
 .note {
   padding: 1rem;
   background-color: var(--s-0);
+  min-height: 6rem;
+}
+
+@media (max-width: 767px) {
+  .notesWrapper {
+    flex-direction: column;
+  }
+  .timeColumn {
+    margin-block-end: 1rem;
+    margin-inline-end: 0;
+    justify-content: space-between;
+  }
+  .notes {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
 }
