@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import styles from './side-bar.module.css'
 import { copyElement } from '../../components/footer/footer'
+import LogoLink from '../logo-link/logo-link'
 
 const navItemsContent = [
   { label: 'weekday', link: '/app#weekend' },
@@ -30,9 +31,7 @@ const SideBar = () => {
   return (
     <div className={styles.side}>
       <div className={styles.nav}>
-        <Link to='/' className={styles.logo}>
-          time<strong>Budget</strong>
-        </Link>
+        <LogoLink classes={styles.sidebarLogo} />
         {navItemsContent.map(navItem)}
       </div>
       <div className={styles.links}>
