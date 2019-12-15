@@ -8,6 +8,8 @@
   --s-0: #fcf1cb;
 
   --g-4: #8a8991;
+  --g-9: #2c2b33;
+  --g-9-a: rgba(44, 43, 51, 0.5);
 
   /* breakpoints */
   --breakpoint-xs: 575px;

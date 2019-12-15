@@ -1,0 +1,66 @@
+.btnReset {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.btnReset:focus {
+  outline: 2px dashed var(--p-5);
+}
+
+.tabBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 48px;
+  box-shadow: 0 1px 3px var(--g-9-a);
+
+  padding: 0 1rem;
+}
+
+.hum {
+  --size: 24px;
+
+  block-size: var(--size);
+  inline-size: var(--size);
+
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.humBar {
+  block-size: 2px;
+
+  background-color: var(--g-9-a);
+}
+.humBar + .humBar {
+  margin-block-start: 3px;
+}
+
+.logo {
+}
+
+.help {
+  --c: var(--g-9-a);
+  --size: 28px;
+
+  block-size: var(--size);
+  inline-size: var(--size);
+
+  border: 1px solid var(--c);
+  border-radius: var(--size);
+  color: var(--c);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .tabBar {
+    display: none;
+  }
+}

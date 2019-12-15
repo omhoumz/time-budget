@@ -5,6 +5,7 @@ import SEO from '../../components/seo/seo'
 import styles from './app-page.module.css'
 import Notes from '../../components/ui/notes/notes'
 import SideBar from '../../components/side-bar/side-bar'
+import TabBar from '../../components/tab-bar/tab-bar'
 
 const messages = [{ message: '1' }, { message: '2' }, { message: '3' }]
 
@@ -12,6 +13,7 @@ const AppPage = () => {
   return (
     <main className={cx('main', styles.main)}>
       <SEO title='App' />
+      <TabBar />
       <SideBar />
       <div className={styles.content}>
         <Notes date='08:00pm' messages={messages} />
