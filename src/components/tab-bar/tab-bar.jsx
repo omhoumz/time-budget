@@ -14,7 +14,6 @@ const TabBar = () => {
         <div className={styles.humBar}></div>
       </button>
       <LogoLink />
-      {/* <span className={styles.logo}>timeBudget</span> */}
       <button className={cx(styles.btnReset, styles.help)}>?</button>
     </div>
   )

@@ -14,16 +14,22 @@
   align-items: center;
 
   height: 48px;
-  box-shadow: 0 1px 3px var(--g-9-a);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
 
   padding: 0 1rem;
+
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1010;
 }
 
 .hum {
-  --size: 24px;
+  --size: 30px;
 
   block-size: var(--size);
   inline-size: var(--size);
+  padding: 0 4px;
 
   display: flex;
   justify-content: center;
@@ -38,9 +44,6 @@
 }
 .humBar + .humBar {
   margin-block-start: 3px;
-}
-
-.logo {
 }
 
 .help {
