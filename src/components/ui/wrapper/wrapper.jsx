@@ -5,7 +5,7 @@ import cx from 'classnames'
 import styles from './wrapper.module.css'
 
 const Wrapper = ({ children, comp, classes }) => {
-  const Comp = comp || 'main'
+  const Comp = comp || 'div'
 
   return <Comp className={cx(styles.wrapper, classes)}>{children}</Comp>
 }
