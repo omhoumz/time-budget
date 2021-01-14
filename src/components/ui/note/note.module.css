@@ -1,0 +1,13 @@
+.note {
+  padding: 1rem;
+  background-color: var(--s-0);
+  min-height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.durationType {
+  align-self: flex-end;
+  font-size: 14px;
+}
